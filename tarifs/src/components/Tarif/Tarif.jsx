@@ -23,3 +23,7 @@ export default class Tarif extends React.Component {
         )
     }
 }
+
+Tarif.defaultProps = {
+    colorTheme: 'blue',
+}
