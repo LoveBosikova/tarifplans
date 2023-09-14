@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap'); 
+
+* {
+    font-family: 'Raleway', sans-serif;
+    }
+
+    $card-width: 15vw;
+
+    .card {
+        min-width: $card-width;
+        padding: .5px;
+
+        &__name {
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            padding-top: .4rem;
+            padding-bottom: 0.4rem;
+            color: white;
+        }
+
+        &__speed {
+            text-align: center;
+            color:rgb(117, 117, 117); 
+            background-color: rgb(240, 240, 240);
+            font-size: 10px;
+            padding-top: .5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        &__cost {
+            height: 100%;
+            color: white;
+        }
+
+        &__textCost {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 30px;
+            margin-top: 1px;
+            margin-bottom: 1px;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        &__text {
+            font-size: 7px;
+
+            &--upperline {
+                align-self: flex-start;
+            }
+
+            &--underline {
+                align-self: flex-end;
+            }
+        }
+
+        &__footer {
+            text-align: center;
+            color:rgb(117, 117, 117); 
+            background-color: rgb(212, 212, 212);
+            font-size: 10px;
+            padding-top: .5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        &--blue {
+            .card__name {
+                background-color: rgb(62, 206, 194);
+            }
+
+            .card__cost {
+                background-color: rgb(96, 248, 235);
+            }
+        }
+
+        &--green {
+            .card__name {
+                background-color: rgb(62, 206, 151);
+            }
+
+            .card__cost {
+                background-color: rgb(123, 255, 156);
+            }
+        }
+
+        &--red {
+            min-width: calc($card-width + 1rem);
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+            .card__name {
+                background-color: rgb(206, 62, 62);
+
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            .card__cost {
+                background-color: rgb(255, 123, 123);
+            }
+        }
+
+        &--black {
+            .card__name {
+                background-color: rgb(7, 7, 7);
+            }
+
+            .card__cost {
+                background-color: rgb(44, 44, 44);
+            }
+        }
+    }
