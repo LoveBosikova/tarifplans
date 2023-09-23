@@ -90,9 +90,6 @@
 
             .card__name {
                 background-color: rgb(206, 62, 62);
-
-                padding-top: 1rem;
-                padding-bottom: 1rem;
             }
 
             .card__cost {
@@ -108,4 +105,24 @@
                 background-color: rgb(44, 44, 44);
             }
         }
+
+        &--current {
+            .card__name {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+        }
+
     }
+
+
+.tarifs {
+    display: flex;
+    max-width: 80vw;
+    max-height: 40vh;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
